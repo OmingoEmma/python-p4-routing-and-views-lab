@@ -16,7 +16,7 @@ def print_string(parameter):
 @app.route('/count/<int:parameter>', methods=['GET'])
 def count(parameter):
 
-    numbers = "\n".join(str(i) for i in range(parameter))  it
+    numbers = "\n".join(str(i) for i in range(parameter )) + "\n"
     return Response(numbers, mimetype='text/plain')  
 
 @app.route('/math/<int:num1>/<operation>/<int:num2>', methods=['GET'])
